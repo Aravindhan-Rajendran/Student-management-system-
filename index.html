@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div style="align-items: center;" id="head">
+        <h1>Student Portal</h1>
+    </div>
+    <div class="searchdiv">
+        <input type="text" placeholder="Search" id="search" />
+        <button type="button" id="button">Search</button>
+    </div>
+    <div id="sortbtn">
+        <button type="button" id="buttonaz" onclick="atoz()">Sort A->Z</button>
+        <button type="button" id="buttonza" onclick="ztoa()">Sort Z->A</button>
+        <button type="button" id="buttonmark" onclick="marke()">Sort By Marks</button>
+        <button type="button" id="buttonpass" onclick="passs()">Sort By Passing</button>
+        <button type="button" id="buttonclass" onclick="classing()">Sort By Class</button>
+        <button type="button" id="buttongender" onclick="gend()">Sort By Gender</button>
+    </div>
+    <div>
+        <table>
+            <th class="heading" id="headu">
+            <td class="id">ID</td>
+            <td class="name">Name</td>
+            <td class="gender">Gender</td>
+            <td class="class">Class</td>
+            <td class="mark">Marks</td>
+            <td class="pass">Passing</td>
+            <td class="email">Email</td>
+            </th>
+        </table>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
